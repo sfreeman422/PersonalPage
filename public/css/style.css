@@ -20,3 +20,7 @@ p{
 #headline{
 	background-image: url("../images/bg.jpg");
 }
+.col-xs-12{
+	padding: 0;
+	margin: 0;
+}
