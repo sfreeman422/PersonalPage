@@ -1,0 +1,26 @@
+{
+  "name": "personalpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfreeman422/PersonalPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfreeman422/PersonalPage/issues"
+  },
+  "homepage": "https://github.com/sfreeman422/PersonalPage#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "fullpage.js": "^2.8.9",
+    "jquery": "^3.1.1",
+    "jsdom": "^9.8.3",
+    "morgan": "^1.7.0"
+  }
+}

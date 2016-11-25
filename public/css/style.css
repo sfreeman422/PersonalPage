@@ -1,0 +1,22 @@
+h1, h2{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+h1{
+	font-size: 120px;
+	padding: 0px;
+}
+p{
+	font-family: 'Roboto', sans-serif;
+}
+.section{
+	background-size: cover;
+	text-align: center;
+}
+.slide{
+	background-size: cover;
+	text-align: center;
+}
+#headline{
+	background-image: url("../images/bg.jpg");
+}
