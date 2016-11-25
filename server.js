@@ -1,11 +1,15 @@
 //Requires
 var express = require('express');
 var morgan = require('morgan');
+var path = require('path');
 var app = express(); 
+
+//Path usage to allow serving of HTML via the public folder. 
+app.use(express.static(path.join(__dirname, 'public')));
 
 //Routes
 app.get('/', function(req, res){
-	res.send("./public/index.html");
+	res.sendFile("index.html");
 })
 
 //Listener
