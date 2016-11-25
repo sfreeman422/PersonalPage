@@ -4,6 +4,8 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express(); 
 
+//Instantiate Morgan to log requests. 
+app.use(morgan('dev'))
 //Path usage to allow serving of HTML via the public folder. 
 app.use(express.static(path.join(__dirname, 'public')));
 
