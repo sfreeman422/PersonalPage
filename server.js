@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 //Requires
 var express = require('express');
 var morgan = require('morgan');
