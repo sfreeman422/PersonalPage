@@ -1,32 +1,78 @@
-h1, h2{
+/*Desktop*/
+@media screen and (min-width:768px){
+	h1, h2{
 	color: white;
 	font-family: 'Roboto', sans-serif;
+	}
+	h1{
+		font-size: 120px;
+		padding: 0px;
+	}
+	p{
+		font-family: 'Roboto', sans-serif;
+	}
+	.section{
+		background-size: cover;
+		text-align: center;
+	}
+	#headline{
+		background-image: url("../images/bg.jpg");
+	}
+	.col-xs-12{
+		padding: 0;
+		margin: 0;
+	}
+	p{
+		font-size: 18px;
+	}
+	.carousel-inner > .item > img {
+   		margin: 0 auto;
+	}
+	h2{
+		margin-bottom: 15px;
+	}
+	.carousel-control.left, .carousel-control.right {
+    background-image: none
+	}
+	.carousel-indicators li { visibility: hidden; }
 }
-h1{
-	font-size: 120px;
-	padding: 0px;
-}
-p{
+
+
+/*Phones and Tablets*/
+@media screen and (max-width: 768px){
+	h1, h2{
+	color: white;
 	font-family: 'Roboto', sans-serif;
-}
-.section{
-	background-size: cover;
-	text-align: center;
-}
-.slide{
-	background-size: cover;
-	text-align: center;
-}
-#headline{
-	background-image: url("../images/bg.jpg");
-}
-.col-xs-12{
-	padding: 0;
-	margin: 0;
-}
-p{
-	font-size: 18px;
-}
-h2{
-	margin-bottom: 15px;
+	}
+	h1{
+		font-size: 60px;
+		padding: 0px;
+	}
+	p{
+		font-family: 'Roboto', sans-serif;
+	}
+	.section{
+		background-size: cover;
+		text-align: center;
+	}
+	#profilePic{
+		display: none;
+	}
+	#headline{
+		background-image: url("../images/bg.jpg");
+	}
+	.col-xs-12{
+		padding: 0;
+		margin: 0;
+	}
+	p{
+		font-size: 18px;
+	}
+	h2{
+		margin-bottom: 15px;
+	}
+	.carousel-control.left, .carousel-control.right {
+    background-image: none
+	}
+	.carousel-indicators li { visibility: hidden; }
 }
