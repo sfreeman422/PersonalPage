@@ -44,6 +44,11 @@
     background-image: none
 	}
 	.carousel-indicators li { visibility: hidden; }
+	section{
+	  	display: flex;
+   		justify-content: center;
+   		align-items: center;
+	}
 }
 
 
