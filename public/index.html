@@ -2,14 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width">
-	<!--Import the fullpage.js css-->
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<!--Import Jquery from CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<!--Import the jquery easinings file for fullpage.js-->
-	<script src="vendors/jquery.easings.min.js"></script>
-	<!--Import the fullpage js stuff -->
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<!--Import the onepagescroll js stuff -->
+	<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+		<!--Import the onepagescroll css-->
+	<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
 	<!--Import Google Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:100" rel="stylesheet">
 	<!--Import bootstrap-->
@@ -20,34 +18,28 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<!--Import custom CSS-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--Initialize the webpage-->
-	<script type="text/javascript">
-    $(document).ready(function() {
-        $('#fullpage').fullpage({
-        	sectionsColor: ['black', '#4BBFC3', 'grey', 'black']
-        });
-    });
-</script>
 </head>
 <body>
-	<div class = "col-xs-12" id = "fullpage">
-		<div class = "section" id="headline">
-			<h1>Steve Freeman</h1>
-			<h2>Full Stack Web Developer. Systems Administrator. Entrepreneur.</h2> 
-		</div>
+	<div class = "main col-xs-12">
+		<section class = "vcenter" id="headline">
+			<div id="landing">
+				<h1>Steve Freeman</h1>
+				<h2>Full Stack Web Developer. Systems Administrator. Entrepreneur.</h2> 
+			</div>
+		</section>
 
-		<div class = "section">
-			<div class = "col-xs-12 col-md-6" id = "profilePic">
-				<img src = "images/profile.png" class="img-responsive">
+		<section id="about">
+			<div class = "col-xs-12 col-md-6">
+				<img src = "images/profile.png" class="img-responsive"  id = "profilePic">
 			</div>
 
 			<div class ="col-xs-12 col-md-6" id = "aboutText">
 			<h1>About</h1>
 			<p>Steve Freeman is Full Stack Web Developer with a passion for creating useful, unique and efficient web applications designed to help others. Steve is passionate about backend technologies and enjoys exploring the latest and greatest libraries and frameworks in his everyday coding. Steve's skills primarily focus on JavaScript related libraries such as Node.js and Passport.js however, he also has an interest in Java, as this was the first programming language he tried to teach himself. He is passionate about all technology but takes a liking to Android, Linux and Mac. Outside of being a developer, Steve works full-time as a Systems Administrator.</p>
 			</div>
-		</div>
+		</section>
 
-		<div class = "section" id="projects">
+		<section id="projects">
 			<h1>Projects</h1>
 			<!--Carousel Code-->
 			<div id="carousel-projects" class="carousel slide" data-ride="carousel">
@@ -57,7 +49,6 @@
 			    <li data-target="#carousel-projects" data-slide-to="1"></li>
 			    <li data-target="#carousel-projects" data-slide-to="2"></li>
 			  </ol>
-			 
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner">
 			    <div class="item active">
@@ -82,7 +73,6 @@
 			      </div>
 			    </div>
 			  </div>
-			 
 			  <!-- Controls -->
 			  <a class="left carousel-control" href="#carousel-projects" role="button" data-slide="prev">
 			    <span class="glyphicon glyphicon-chevron-left"></span>
@@ -91,13 +81,27 @@
 			    <span class="glyphicon glyphicon-chevron-right"></span>
 			  </a>
 			</div> <!-- Carousel -->
-		</div>
-		<div class = "section" id="contactinfo">
+		</section>
+		<section id="contact">
 		<h1>Let's Talk</h1>
 		<a href="https://github.com/sfreeman422"><img src="images/octocat.png"></a>
 		<a href="https://www.linkedin.com/in/sfreeman422"><img src="images/linkedin.png"></a>
-		</div>
+		</section>
 	</div>
+<!--Initialize the webpage-->
+<script type="text/javascript">
+ 	$(".main").onepage_scroll({
+ 		sectionContainer: "section",
+ 		easing: "ease",
+ 		animationTime: 500,
+ 		pagination: true,
+ 		updateURL: false,
+ 		loop: false, 
+ 		keyboard: true,
+ 		direction: "vertical"
+ 	})
+</script>
+<!--Initialize the carousel-->
 <script>
 	$('.carousel').carousel({
 		interval: 3000
