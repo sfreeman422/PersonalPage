@@ -29,7 +29,7 @@
 		</section>
 
 		<section id="about">
-			<div class = "col-xs-12 col-md-6">
+			<div class = "col-xs-12 col-md-6" id="profPic">
 				<img src = "images/profile.png" class="img-responsive"  id = "profilePic">
 			</div>
 
@@ -65,13 +65,13 @@
 			      	<h3>A News Aggregator</h3>
 			      </div>
 			    </div>
-			    <div class="item">
+			    <!--<div class="item">
 			      <img src="images/spotify.png" alt="...">
 			      <div class="carousel-caption">
 			      	<h3>SpotifySocial</h3>
 			      	<h3>A Friend Finder Application for Concert Goers</h3>
 			      </div>
-			    </div>
+			    </div>-->
 			  </div>
 			  <!-- Controls -->
 			  <a class="left carousel-control" href="#carousel-projects" role="button" data-slide="prev">
@@ -84,10 +84,8 @@
 		</section>
 		<section id="contact">
 		<h1>Let's Talk</h1>
-		<div id="links">
-			<a href="https://github.com/sfreeman422"><img src="images/octocat.png"></a>
-			<a href="https://www.linkedin.com/in/sfreeman422"><img src="images/linkedin.png"></a>
-		</div>
+		<a href="https://github.com/sfreeman422"><img src="images/octocat.png"></a>
+		<a href="https://www.linkedin.com/in/sfreeman422"><img src="images/linkedin.png"></a>
 		</section>
 	</div>
 <!--Initialize the webpage-->
@@ -100,6 +98,7 @@
  		updateURL: false,
  		loop: false, 
  		keyboard: true,
+ 		responsiveFallback: false,
  		direction: "vertical"
  	})
 </script>
