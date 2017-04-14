@@ -22019,12 +22019,22 @@
 		function Projects() {
 			_classCallCheck(this, Projects);
 
-			return _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
+			var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
+
+			_this.goToProject.bind(_this);
+			return _this;
 		}
 
 		_createClass(Projects, [{
+			key: "goToProject",
+			value: function goToProject(link) {
+				console.log("This link is: " + link);
+			}
+		}, {
 			key: "render",
 			value: function render() {
+				var _this2 = this;
+
 				return _react2.default.createElement(
 					"div",
 					{ className: "row" },
@@ -22047,7 +22057,9 @@
 									null,
 									_react2.default.createElement(
 										"td",
-										{ className: "project", id: "project1" },
+										{ className: "project", id: "project1", onClick: function onClick() {
+												return _this2.goToProject("https://github.com/sfreeman422/HackathonQR");
+											} },
 										_react2.default.createElement(
 											"h2",
 											null,
@@ -22066,7 +22078,9 @@
 									),
 									_react2.default.createElement(
 										"td",
-										{ className: "project", id: "project2" },
+										{ className: "project", id: "project2", onClick: function onClick() {
+												return _this2.goToProject("https://github.com/sfreeman422/RaspAlarm");
+											} },
 										_react2.default.createElement(
 											"h2",
 											null,
@@ -22080,7 +22094,9 @@
 									),
 									_react2.default.createElement(
 										"td",
-										{ className: "project", id: "project3" },
+										{ className: "project", id: "project3", onClick: function onClick() {
+												return _this2.goToProject("https://github.com/sfreeman422/BubbleGame");
+											} },
 										_react2.default.createElement(
 											"h2",
 											null,
@@ -22098,7 +22114,9 @@
 									null,
 									_react2.default.createElement(
 										"td",
-										{ className: "project", id: "project4" },
+										{ className: "project", id: "project4", onClick: function onClick() {
+												return _this2.goToProject("https://github.com/tomtom28/crap-yap");
+											} },
 										_react2.default.createElement(
 											"h2",
 											null,
@@ -22117,7 +22135,9 @@
 									),
 									_react2.default.createElement(
 										"td",
-										{ className: "project", id: "project5" },
+										{ className: "project", id: "project5", onClick: function onClick() {
+												return _this2.goToProject("project5Link");
+											} },
 										_react2.default.createElement(
 											"h2",
 											null,
@@ -22131,7 +22151,9 @@
 									),
 									_react2.default.createElement(
 										"td",
-										{ className: "project", id: "project6" },
+										{ className: "project", id: "project6", onClick: function onClick() {
+												return _this2.goToProject("project6Link");
+											} },
 										_react2.default.createElement(
 											"h2",
 											null,

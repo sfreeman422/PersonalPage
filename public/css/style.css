@@ -40,20 +40,38 @@
 	#project1{
 		background-color: #438398;
 	}
+	#project1:hover{
+		background-color: #53ACC9;
+	}
 	#project2{
 		background-color: #71C1AD;
+	}
+	#project2:hover{
+		background-color: #53ACC9;
 	}
 	#project3{
 		background-color: #438398;
 	}
+	#project3:hover{
+		background-color: #53ACC9;
+	}
 	#project4{
 		background-color: #71C1AD;
+	}
+	#project4:hover{
+		background-color: #53ACC9;
 	}
 	#project5{
 		background-color: #438398;
 	}
+	#project5:hover{
+		background-color: #53ACC9;
+	}
 	#project6{
 		background-color: #71C1AD;
+	}
+	#project6:hover{
+		background-color: #53ACC9;
 	}
 	#profilePic{
 		margin: 0 auto;
