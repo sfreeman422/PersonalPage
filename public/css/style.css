@@ -6,6 +6,9 @@
 		color: white;
 		font-family: 'Roboto', sans-serif;
 	}
+	td{
+		cursor: pointer;
+	}
 	.fullPage{
 		height: 100vh;
 	}
@@ -25,6 +28,9 @@
 	.project{
 		padding: 5%;
 		width: 33.33%;
+		border-style: solid;
+		border-color: black;
+		border-width: 1px;
 	}
 	#landing{
 		background-image: url("../images/bg.jpg");

@@ -22029,6 +22029,7 @@
 			key: "goToProject",
 			value: function goToProject(link) {
 				console.log("This link is: " + link);
+				window.location.replace(link);
 			}
 		}, {
 			key: "render",

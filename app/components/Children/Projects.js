@@ -7,6 +7,7 @@ export default class Projects extends React.Component{
 	}
 	goToProject(link){
 		console.log("This link is: "+link);
+		window.location.replace(link);
 	}
 	render(){
 		return (
