@@ -22,6 +22,9 @@
 		display: flex;
 		align-items: center;
 	}
+	.project{
+		padding: 5%;
+	}
 	#landing{
 		background-image: url("../images/bg.jpg");
 	}
@@ -30,24 +33,26 @@
 	}
 	#projects{
 		background-color: #4BAC94;
+		padding: 5%;
+		min-height: 100%;
 	}
 	#project1{
-		background-color: red;
+		background-color: #438398;
 	}
 	#project2{
-		background-color: purple;
+		background-color: #71C1AD;
 	}
 	#project3{
-		background-color: black;
+		background-color: #438398;
 	}
 	#project4{
-		background-color: blue;
+		background-color: #71C1AD;
 	}
 	#project5{
-		background-color: pink;
+		background-color: #438398;
 	}
 	#project6{
-		background-color: yellow;
+		background-color: #71C1AD;
 	}
 	#profilePic{
 		margin: 0 auto;
