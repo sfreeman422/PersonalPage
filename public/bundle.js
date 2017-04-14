@@ -22041,7 +22041,7 @@
 					{ className: "row" },
 					_react2.default.createElement(
 						"div",
-						{ className: "fullPage", id: "projects" },
+						{ className: "fullPage verticalCenterLanding", id: "projects" },
 						_react2.default.createElement(
 							"h1",
 							{ id: "projectHeadliner" },

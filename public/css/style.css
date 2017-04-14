@@ -1,4 +1,6 @@
 /*At all resolutions */
+
+	/*Tags */
 	body{
 		background-color: black;
 	}
@@ -9,6 +11,8 @@
 	td{
 		cursor: pointer;
 	}
+
+	/*Classes*/
 	.fullPage{
 		height: 100vh;
 	}
@@ -32,8 +36,11 @@
 		border-color: black;
 		border-width: 1px;
 	}
+
+	/*IDs*/
 	#landing{
-		background-image: url("../images/bg.jpg");
+		background-image: url("../images/bg-min.jpg");
+		background-size: cover;
 	}
 	#information{
 		background-color: #4BBFC3;
@@ -85,22 +92,31 @@
 	#aboutText{
 		margin: 0 auto;
 	}
+
 /*Desktop*/
 @media screen and (min-width:768px){
+	/*Tags */
 	h1{
 		font-size: 120px;
 		margin-top: 0px;
 	}
+	/*Classes*/
+
+	/*IDs*/
 	#about{
 		font-size: 24px;
 	}
 }
 /*Phones and Tablets*/
 @media screen and (max-width: 768px){
+	/*Tags */
 	h1{
 		font-size: 60px;
 		padding: 0px;
 	}
+	/*Classes */
+
+	/*IDs*/
 	#profPic{
 		display: none;
 	}

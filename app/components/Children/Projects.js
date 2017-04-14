@@ -12,7 +12,7 @@ export default class Projects extends React.Component{
 	render(){
 		return (
 			<div className="row">
-				<div className="fullPage" id="projects">
+				<div className="fullPage verticalCenterLanding" id="projects">
 					<h1 id="projectHeadliner">Projects</h1>
 					<table className="col-xs-12">
 						<tbody>
