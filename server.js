@@ -11,8 +11,8 @@ app.use(morgan('dev'))
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Routes
-app.get('/', function(req, res){
-	res.sendFile("index.html");
+app.get('/*', function(req, res){
+	res.sendFile(__dirname+"/public/index.html");
 })
 
 //Listener
