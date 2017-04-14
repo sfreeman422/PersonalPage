@@ -24,6 +24,7 @@
 	}
 	.project{
 		padding: 5%;
+		width: 33.33%;
 	}
 	#landing{
 		background-image: url("../images/bg.jpg");

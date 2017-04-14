@@ -22037,97 +22037,111 @@
 							"Projects"
 						),
 						_react2.default.createElement(
-							"div",
-							{ className: "holder" },
+							"table",
+							{ className: "col-xs-12" },
 							_react2.default.createElement(
-								"div",
-								{ className: "row" },
+								"tbody",
+								null,
 								_react2.default.createElement(
-									"div",
-									{ className: "col-xs-4 project", id: "project1" },
+									"tr",
+									null,
 									_react2.default.createElement(
-										"h2",
-										null,
-										"HackOrg"
+										"td",
+										{ className: "project", id: "project1" },
+										_react2.default.createElement(
+											"h2",
+											null,
+											"HackOrg"
+										),
+										_react2.default.createElement(
+											"p",
+											null,
+											"Streamlining hackathon attendance, one QR code at a time."
+										),
+										_react2.default.createElement(
+											"p",
+											null,
+											"Awarded a Finalist Medal at #HackNJIT"
+										)
 									),
 									_react2.default.createElement(
-										"p",
-										null,
-										"Streamlining hackathon attendance, one QR code at a time."
+										"td",
+										{ className: "project", id: "project2" },
+										_react2.default.createElement(
+											"h2",
+											null,
+											"RaspAlarm"
+										),
+										_react2.default.createElement(
+											"p",
+											null,
+											"Deteching the bedroom with MERN & Raspberry Pi"
+										)
+									),
+									_react2.default.createElement(
+										"td",
+										{ className: "project", id: "project3" },
+										_react2.default.createElement(
+											"h2",
+											null,
+											"RIP/RAV"
+										),
+										_react2.default.createElement(
+											"p",
+											null,
+											"A bubble popping game using Phaser.io"
+										)
 									)
 								),
 								_react2.default.createElement(
-									"div",
-									{ className: "col-xs-4 project", id: "project2" },
+									"tr",
+									null,
 									_react2.default.createElement(
-										"h2",
-										null,
-										"RaspAlarm"
+										"td",
+										{ className: "project", id: "project4" },
+										_react2.default.createElement(
+											"h2",
+											null,
+											"Crapper-Yapper"
+										),
+										_react2.default.createElement(
+											"p",
+											null,
+											"A Morse Code Based, Poop Emoji Chat App."
+										),
+										_react2.default.createElement(
+											"p",
+											null,
+											"Built for #StupidHackathon"
+										)
 									),
 									_react2.default.createElement(
-										"p",
-										null,
-										"Deteching the bedroom with MERN & Raspberry Pi"
-									)
-								),
-								_react2.default.createElement(
-									"div",
-									{ className: "col-xs-4 project", id: "project3" },
-									_react2.default.createElement(
-										"h2",
-										null,
-										"RIP/RAV"
+										"td",
+										{ className: "project", id: "project5" },
+										_react2.default.createElement(
+											"h2",
+											null,
+											"Project 5"
+										),
+										_react2.default.createElement(
+											"p",
+											null,
+											"Description for Project 5 Goes Here"
+										)
 									),
 									_react2.default.createElement(
-										"p",
-										null,
-										"A bubble popping game using Phaser.io"
-									)
-								)
-							),
-							_react2.default.createElement(
-								"div",
-								{ className: "row" },
-								_react2.default.createElement(
-									"div",
-									{ className: "col-xs-4 project", id: "project4" },
-									_react2.default.createElement(
-										"h2",
-										null,
-										"Crapper Yapper"
-									),
-									_react2.default.createElement(
-										"p",
-										null,
-										"A Morse Code Based, Poop Emoji Chat App"
-									)
-								),
-								_react2.default.createElement(
-									"div",
-									{ className: "col-xs-4 project", id: "project5" },
-									_react2.default.createElement(
-										"h2",
-										null,
-										"Project 5"
-									),
-									_react2.default.createElement(
-										"p",
-										null,
-										"Description for Project 5 Goes Here"
-									)
-								),
-								_react2.default.createElement(
-									"div",
-									{ className: "col-xs-4 project", id: "project6" },
-									_react2.default.createElement(
-										"h2",
-										null,
-										"Project 6"
-									),
-									_react2.default.createElement(
-										"p",
-										null,
-										"Description for Project 6 Goes Here"
+										"td",
+										{ className: "project", id: "project6" },
+										_react2.default.createElement(
+											"h2",
+											null,
+											"Project 6"
+										),
+										_react2.default.createElement(
+											"p",
+											null,
+											"Description for Project 6 Goes Here"
+										)
 									)
 								)
 							)
