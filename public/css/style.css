@@ -1,113 +1,77 @@
-/*Desktop*/
-@media screen and (min-width:768px){
+/*At all resolutions */
+	body{
+		background-color: black;
+	}
 	h1, h2, p{
-	color: white;
-	font-family: 'Roboto', sans-serif;
+		color: white;
+		font-family: 'Roboto', sans-serif;
 	}
-	h1{
-		font-size: 120px;
-		padding: 0px;
+	.fullPage{
+		height: 100vh;
 	}
-	.section{
-		background-size: cover;
-		text-align: center;
+	.row{
+		margin: 0px;
 	}
-	#headline{
+	.verticalCenterLanding{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+  		align-items: center;
+	}
+	.verticalCenterInformation{
+		display: flex;
+		align-items: center;
+	}
+	#landing{
 		background-image: url("../images/bg.jpg");
 	}
-	#about{
+	#information{
 		background-color: #4BBFC3;
-	}
-	#profilePic{
-		margin: 0 auto;
 	}
 	#projects{
 		background-color: #4BAC94;
 	}
-	#contact{
+	#project1{
+		background-color: red;
+	}
+	#project2{
+		background-color: purple;
+	}
+	#project3{
 		background-color: black;
 	}
-	.col-xs-12{
-		padding: 0;
-		margin: 0;
+	#project4{
+		background-color: blue;
 	}
-	.carousel-inner > .item > img {
-   		margin: 0 auto;
+	#project5{
+		background-color: pink;
 	}
-	p{
+	#project6{
+		background-color: yellow;
+	}
+	#profilePic{
+		margin: 0 auto;
+	}
+	#aboutText{
+		margin: 0 auto;
+	}
+/*Desktop*/
+@media screen and (min-width:768px){
+	h1{
+		font-size: 120px;
+		margin-top: 0px;
+	}
+	#about{
 		font-size: 24px;
 	}
-	h2{
-		margin-bottom: 15px;
-	}
-	.carousel-control.left, .carousel-control.right {
-    background-image: none
-	}
-	.carousel-indicators li { visibility: hidden; }
-	section{
-	  	display: flex;
-   		justify-content: center;
-   		align-items: center;
-	}
 }
-
-	#project{
-		padding: 33%;
-	}
-
-
 /*Phones and Tablets*/
 @media screen and (max-width: 768px){
-	h1, h2, p{
-	color: white;
-	font-family: 'Roboto', sans-serif;
-	}
 	h1{
 		font-size: 60px;
 		padding: 0px;
 	}
-	.section{
-		background-size: cover;
-		text-align: center;
-	}
-	#headline{
-		background-image: url("../images/bg.jpg");
-	}
-	#about{
-		background-color: #4BBFC3;
-	}
-	#profilePic{
-		margin: 0 auto;
-	}
-	#projects{
-		background-color: #4BAC94;
-	}
-	#contact{
-		background-color: black;
-	}
 	#profPic{
 		display: none;
-	}
-	.col-xs-12{
-		padding: 0;
-		margin: 0;
-	}
-	p{
-		font-size: 18px;
-	}
-	h2{
-		margin-bottom: 15px;
-	}
-	h3{
-		font-size: 10px;
-	}
-	.carousel-control.left, .carousel-control.right {
-    background-image: none
-	}
-	.carousel-indicators li { visibility: hidden; }
-	section{
-	  	display: flex;
-   		justify-content: center;
-   		align-items: center;
 	}
 }

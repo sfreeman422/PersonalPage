@@ -7,7 +7,7 @@ export default class Landing extends React.Component{
 	render(){
 		return (
 			<div className="row">
-				<div className="fullpage verticalCenter" id="landing">
+				<div className="fullPage verticalCenterLanding" id="landing">
 					<h1>Steve Freeman</h1>
 					<h2>Full Stack Web Developer. Systems Administrator. Entrepreneur.</h2> 
 				</div>
