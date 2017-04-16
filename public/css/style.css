@@ -55,10 +55,10 @@
 	#project1{
 		background-color: #158468;
 		border-right-style: solid;
-		border-right-color: rgba(255, 255, 255, 0.6);
+		border-right-color: #4BAC94;
 		border-right-width: 1px;
 		border-bottom-style: solid;
-		border-bottom-color: rgba(255, 255, 255, 0.6);
+		border-bottom-color: #4BAC94;
 		border-bottom-width: 1px;
 	}
 	#project1:hover{
@@ -67,10 +67,10 @@
 	#project2{
 		background-color: #158468;
 		border-right-style: solid;
-		border-right-color: rgba(255, 255, 255, 0.6);
+		border-right-color: #4BAC94;
 		border-right-width: 1px;
 		border-bottom-style: solid;
-		border-bottom-color: rgba(255, 255, 255, 0.6);
+		border-bottom-color: #4BAC94;
 		border-bottom-width: 1px;
 	}
 	#project2:hover{
@@ -79,7 +79,7 @@
 	#project3{
 		background-color: #158468;
 		border-bottom-style: solid;
-		border-bottom-color: rgba(255, 255, 255, 0.6);
+		border-bottom-color: #4BAC94;
 		border-bottom-width: 1px;
 	}
 	#project3:hover{
@@ -88,7 +88,7 @@
 	#project4{
 		background-color: #158468;
 		border-right-style: solid;
-		border-right-color: rgba(255, 255, 255, 0.6);
+		border-right-color: #4BAC94;
 		border-right-width: 1px;
 	}
 	#project4:hover{
@@ -97,7 +97,7 @@
 	#project5{
 		background-color: #158468;
 		border-right-style: solid;
-		border-right-color: rgba(255, 255, 255, 0.6);
+		border-right-color: #4BAC94;
 		border-right-width: 1px;
 	}
 	#project5:hover{
