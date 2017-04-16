@@ -10,6 +10,7 @@
 	}
 	td{
 		cursor: pointer;
+		margin: 1%;
 	}
 
 	/*Classes*/
@@ -32,9 +33,6 @@
 	.project{
 		padding: 5%;
 		width: 33.33%;
-		border-style: solid;
-		border-color: black;
-		border-width: 1px;
 	}
 
 	/*IDs*/
@@ -50,38 +48,63 @@
 		padding: 5%;
 		min-height: 100%;
 	}
+	#projectTable{
+		table-layout: fixed;
+		width:100%;
+	}
 	#project1{
-		background-color: #438398;
+		background-color: #158468;
+		border-right-style: solid;
+		border-right-color: rgba(255, 255, 255, 0.6);
+		border-right-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: rgba(255, 255, 255, 0.6);
+		border-bottom-width: 1px;
 	}
 	#project1:hover{
 		background-color: #53ACC9;
 	}
 	#project2{
-		background-color: #71C1AD;
+		background-color: #158468;
+		border-right-style: solid;
+		border-right-color: rgba(255, 255, 255, 0.6);
+		border-right-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: rgba(255, 255, 255, 0.6);
+		border-bottom-width: 1px;
 	}
 	#project2:hover{
 		background-color: #53ACC9;
 	}
 	#project3{
-		background-color: #438398;
+		background-color: #158468;
+		border-bottom-style: solid;
+		border-bottom-color: rgba(255, 255, 255, 0.6);
+		border-bottom-width: 1px;
 	}
 	#project3:hover{
 		background-color: #53ACC9;
 	}
 	#project4{
-		background-color: #71C1AD;
+		background-color: #158468;
+		border-right-style: solid;
+		border-right-color: rgba(255, 255, 255, 0.6);
+		border-right-width: 1px;
 	}
 	#project4:hover{
 		background-color: #53ACC9;
 	}
 	#project5{
-		background-color: #438398;
+		background-color: #158468;
+		border-right-style: solid;
+		border-right-color: rgba(255, 255, 255, 0.6);
+		border-right-width: 1px;
 	}
 	#project5:hover{
 		background-color: #53ACC9;
 	}
 	#project6{
-		background-color: #71C1AD;
+		background-color: #158468;
 	}
 	#project6:hover{
 		background-color: #53ACC9;
@@ -106,6 +129,7 @@
 	#about{
 		font-size: 24px;
 	}
+	
 }
 /*Phones and Tablets*/
 @media screen and (max-width: 768px){

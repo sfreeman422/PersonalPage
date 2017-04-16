@@ -22049,7 +22049,7 @@
 						),
 						_react2.default.createElement(
 							"table",
-							{ className: "col-xs-12" },
+							{ className: "col-xs-12", id: "projectTable" },
 							_react2.default.createElement(
 								"tbody",
 								null,

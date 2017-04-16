@@ -14,7 +14,7 @@ export default class Projects extends React.Component{
 			<div className="row">
 				<div className="fullPage verticalCenterLanding" id="projects">
 					<h1 id="projectHeadliner">Projects</h1>
-					<table className="col-xs-12">
+					<table className="col-xs-12" id="projectTable">
 						<tbody>
 							<tr>
 								<td className="project" id="project1" onClick={()=>this.goToProject("https://github.com/sfreeman422/HackathonQR")}>
