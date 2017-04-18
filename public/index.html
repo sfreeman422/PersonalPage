@@ -2,111 +2,15 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width">
-	<!--Import Jquery from CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<!--Import the onepagescroll js stuff -->
-	<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-		<!--Import the onepagescroll css-->
-	<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
 	<!--Import Google Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:100" rel="stylesheet">
 	<!--Import bootstrap-->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<!--Import bootstrap js-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!--Modernizer for preloader-->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<!--Import custom CSS-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class = "main col-xs-12">
-		<section id="headline">
-			<div id="landing">
-				<h1>Steve Freeman</h1>
-				<h2>Full Stack Web Developer. Systems Administrator. Entrepreneur.</h2> 
-			</div>
-		</section>
-
-		<section id="about">
-			<div class = "col-xs-12 col-md-6" id="profPic">
-				<img src = "images/profile.png" class="img-responsive"  id = "profilePic">
-			</div>
-
-			<div class ="col-xs-12 col-md-6" id = "aboutText">
-			<h1>About</h1>
-			<p>Steve Freeman is Full Stack Web Developer with a passion for creating useful, unique and efficient web applications designed to help others. Steve is passionate about backend technologies and enjoys exploring the latest and greatest libraries and frameworks in his everyday coding. Steve's skills primarily focus on JavaScript related libraries such as Node.js and Passport.js however, he also has an interest in Java, as this was the first programming language he tried to teach himself. He is passionate about all technology but takes a liking to Android, Linux and Mac. Outside of being a developer, Steve works full-time as a Systems Administrator.</p>
-			</div>
-		</section>
-
-		<section id="projects">
-			<h1>Projects</h1>
-			<!--Carousel Code-->
-			<div id="carousel-projects" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-projects" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-projects" data-slide-to="1"></li>
-			    <li data-target="#carousel-projects" data-slide-to="2"></li>
-			  </ol>
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
-			    <div class="item active">
-			      <img src="images/hackorg.png" alt="...">
-			      <div class="carousel-caption">
-			      	<h3>HackOrg</h3>
-			      	<h3>An Award Winning, Hackathon Streamlining Web Application</h3>
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img src="images/gator.png" alt="...">
-			      <div class="carousel-caption">
-			      	<h3>Gator</h3>
-			      	<h3>A News Aggregator</h3>
-			      </div>
-			    </div>
-			    <!--<div class="item">
-			      <img src="images/spotify.png" alt="...">
-			      <div class="carousel-caption">
-			      	<h3>SpotifySocial</h3>
-			      	<h3>A Friend Finder Application for Concert Goers</h3>
-			      </div>
-			    </div>-->
-			  </div>
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-projects" role="button" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left"></span>
-			  </a>
-			  <a class="right carousel-control" href="#carousel-projects" role="button" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right"></span>
-			  </a>
-			</div> <!-- Carousel -->
-		</section>
-		<section id="contact">
-		<h1>Let's Talk</h1>
-		<a href="https://github.com/sfreeman422"><img src="images/octocat.png"></a>
-		<a href="https://www.linkedin.com/in/sfreeman422"><img src="images/linkedin.png"></a>
-		</section>
-	</div>
-<!--Initialize the webpage-->
-<script type="text/javascript">
- 	$(".main").onepage_scroll({
- 		sectionContainer: "section",
- 		easing: "ease",
- 		animationTime: 500,
- 		pagination: false,
- 		updateURL: false,
- 		loop: false, 
- 		keyboard: true,
- 		responsiveFallback: false,
- 		direction: "vertical"
- 	})
-</script>
-<!--Initialize the carousel-->
-<script>
-	$('.carousel').carousel({
-		interval: 4000
-	})
-</script>
+	<div id="app"></div>
+	<script src='./bundle.js'></script>
 </body>
 </html>
