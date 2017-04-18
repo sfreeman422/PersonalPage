@@ -21979,7 +21979,7 @@
 							_react2.default.createElement(
 								"p",
 								{ id: "about" },
-								"Steve Freeman is Full Stack Web Developer with a passion for creating useful, unique and efficient web applications designed to help others. Steve is passionate about backend technologies and enjoys exploring the latest and greatest libraries and frameworks in his everyday coding. Steve's skills primarily focus on JavaScript related libraries such as Node.js and Passport.js however, he also has an interest in Java, as this was the first programming language he tried to teach himself. He is passionate about all technology but takes a liking to Android, Linux and Mac. Outside of being a developer, Steve works full-time as a Systems Administrator."
+								"Steve Freeman is Full Stack Web Developer with a passion for creating useful, unique and efficient web applications designed to help others. Steve is passionate about the MERN stack and uses it in most of his side projects. While Steve's skills primarily focus on MERN, he also has experience using Angular and relational database such as MySQL. He is passionate about all technology but really loves Android, Linux and Mac. He is currently employed as System Adminstrator and manages a plethora of servers running both Linux based OSes and Windows. In his spare time, he loves to snowboard, make music and race cars."
 							)
 						)
 					)
@@ -22147,7 +22147,7 @@
 									_react2.default.createElement(
 										"p",
 										null,
-										"My React Based Portfolio Page"
+										"A React Based Portfolio Page"
 									)
 								)
 							)
@@ -22271,7 +22271,7 @@
 											_react2.default.createElement(
 												"p",
 												null,
-												"My React Based Portfolio Page"
+												"A React Based Portfolio Page"
 											)
 										)
 									)

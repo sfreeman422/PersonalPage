@@ -38,7 +38,7 @@ export default class Projects extends React.Component{
 							</li>
 							<li id="projectListNoBorder" onClick={()=>this.goToProject("https://github.com/sfreeman422/PersonalPage")}>
 								<h2>PersonalPage</h2>
-								<p>My React Based Portfolio Page</p>
+								<p>A React Based Portfolio Page</p>
 							</li>
 						</ul>
 					</div>
@@ -77,7 +77,7 @@ export default class Projects extends React.Component{
 								</td>
 								<td className="project" id="project6" onClick={()=>this.goToProject("https://github.com/sfreeman422/PersonalPage")}>
 									<h2>PersonalPage</h2>
-									<p>My React Based Portfolio Page</p>
+									<p>A React Based Portfolio Page</p>
 								</td>
 							</tr>
 						</tbody>
