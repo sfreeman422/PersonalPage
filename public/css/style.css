@@ -152,11 +152,11 @@
 	
 }
 /*Phones and Tablets*/
+/* Tablet Width */
 @media screen and (max-width: 768px){
 	/*Tags */
 	h1{
 		font-size: 60px;
-		padding: 0px;
 	}
 	/*Classes */
 
@@ -164,7 +164,16 @@
 	#profPic{
 		display: none;
 	}
-	#aboutText{
-		font-size: 24px;
+}
+
+@media screen and (max-height: 734px){
+	h1{
+		font-size: 40px; 
+	}
+	h2{
+		font-size: 20px;
+	}
+	p{
+		font-size: 16px;
 	}
 }

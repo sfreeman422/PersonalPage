@@ -22105,7 +22105,7 @@
 								),
 								_react2.default.createElement(
 									"li",
-									{ id: "projectListItem", onClick: function onClick() {
+									{ id: "projectListItemNoBorder", onClick: function onClick() {
 											return _this2.goToProject("https://github.com/sfreeman422/BubbleGame");
 										} },
 									_react2.default.createElement(
@@ -22117,54 +22117,6 @@
 										"p",
 										null,
 										"A bubble popping game using Phaser.io"
-									)
-								),
-								_react2.default.createElement(
-									"li",
-									{ id: "projectListItem", onClick: function onClick() {
-											return _this2.goToProject("https://github.com/tomtom28/crap-yap");
-										} },
-									_react2.default.createElement(
-										"h2",
-										null,
-										"Crapper-Yapper"
-									),
-									_react2.default.createElement(
-										"p",
-										null,
-										"A Morse Code Based, Poop Emoji Chat App."
-									)
-								),
-								_react2.default.createElement(
-									"li",
-									{ id: "projectListItem", onClick: function onClick() {
-											return _this2.goToProject("https://github.com/sfreeman422/NYTReact");
-										} },
-									_react2.default.createElement(
-										"h2",
-										null,
-										"NYTReact"
-									),
-									_react2.default.createElement(
-										"p",
-										null,
-										"A React Based Application Using the NYT API"
-									)
-								),
-								_react2.default.createElement(
-									"li",
-									{ id: "projectListItemNoBorder", onClick: function onClick() {
-											return _this2.goToProject("https://github.com/sfreeman422/PersonalPage");
-										} },
-									_react2.default.createElement(
-										"h2",
-										null,
-										"PersonalPage"
-									),
-									_react2.default.createElement(
-										"p",
-										null,
-										"A React Based Portfolio Page"
 									)
 								)
 							)
