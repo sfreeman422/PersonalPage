@@ -22073,7 +22073,7 @@
 								{ className: "col-xs-12", id: "projectList" },
 								_react2.default.createElement(
 									"li",
-									{ id: "projectList", onClick: function onClick() {
+									{ id: "projectListItem", onClick: function onClick() {
 											return _this2.goToProject("https://github.com/sfreeman422/HackathonQR");
 										} },
 									_react2.default.createElement(
@@ -22089,7 +22089,7 @@
 								),
 								_react2.default.createElement(
 									"li",
-									{ id: "projectList", onClick: function onClick() {
+									{ id: "projectListItem", onClick: function onClick() {
 											return _this2.goToProject("https://github.com/sfreeman422/RaspAlarm");
 										} },
 									_react2.default.createElement(
@@ -22105,7 +22105,7 @@
 								),
 								_react2.default.createElement(
 									"li",
-									{ id: "projectList", onClick: function onClick() {
+									{ id: "projectListItem", onClick: function onClick() {
 											return _this2.goToProject("https://github.com/sfreeman422/BubbleGame");
 										} },
 									_react2.default.createElement(
@@ -22121,7 +22121,7 @@
 								),
 								_react2.default.createElement(
 									"li",
-									{ id: "projectList", onClick: function onClick() {
+									{ id: "projectListItem", onClick: function onClick() {
 											return _this2.goToProject("https://github.com/tomtom28/crap-yap");
 										} },
 									_react2.default.createElement(
@@ -22137,7 +22137,7 @@
 								),
 								_react2.default.createElement(
 									"li",
-									{ id: "projectList", onClick: function onClick() {
+									{ id: "projectListItem", onClick: function onClick() {
 											return _this2.goToProject("https://github.com/sfreeman422/NYTReact");
 										} },
 									_react2.default.createElement(
@@ -22153,7 +22153,7 @@
 								),
 								_react2.default.createElement(
 									"li",
-									{ id: "projectListNoBorder", onClick: function onClick() {
+									{ id: "projectListItemNoBorder", onClick: function onClick() {
 											return _this2.goToProject("https://github.com/sfreeman422/PersonalPage");
 										} },
 									_react2.default.createElement(

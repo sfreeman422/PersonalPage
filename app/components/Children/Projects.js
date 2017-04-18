@@ -16,27 +16,27 @@ export default class Projects extends React.Component{
 					<div className="fullPage verticalCenterLanding" id="projects">
 						<h1 id="projectHeadliner">Projects</h1>
 						<ul className="col-xs-12" id="projectList">
-							<li id="projectList" onClick={()=>this.goToProject("https://github.com/sfreeman422/HackathonQR")}>
+							<li id="projectListItem" onClick={()=>this.goToProject("https://github.com/sfreeman422/HackathonQR")}>
 								<h2>HackOrg</h2>
 								<p>Streamlining hackathon attendance, one QR code at a time.</p>
 							</li>
-							<li id="projectList" onClick={()=>this.goToProject("https://github.com/sfreeman422/RaspAlarm")}>
+							<li id="projectListItem" onClick={()=>this.goToProject("https://github.com/sfreeman422/RaspAlarm")}>
 								<h2>RaspAlarm</h2>
 								<p>De-teching the bedroom with MERN & Raspberry Pi</p>
 							</li>
-							<li id="projectList" onClick={()=>this.goToProject("https://github.com/sfreeman422/BubbleGame")}> 
+							<li id="projectListItem" onClick={()=>this.goToProject("https://github.com/sfreeman422/BubbleGame")}> 
 								<h2>RIP/RAV</h2>
 								<p>A bubble popping game using Phaser.io</p>
 							</li>
-							<li id="projectList" onClick={()=>this.goToProject("https://github.com/tomtom28/crap-yap")}>
+							<li id="projectListItem" onClick={()=>this.goToProject("https://github.com/tomtom28/crap-yap")}>
 								<h2>Crapper-Yapper</h2>
 								<p>A Morse Code Based, Poop Emoji Chat App.</p> 
 							</li>
-							<li id="projectList" onClick={()=>this.goToProject("https://github.com/sfreeman422/NYTReact")}>
+							<li id="projectListItem" onClick={()=>this.goToProject("https://github.com/sfreeman422/NYTReact")}>
 								<h2>NYTReact</h2>
 								<p>A React Based Application Using the NYT API</p>
 							</li>
-							<li id="projectListNoBorder" onClick={()=>this.goToProject("https://github.com/sfreeman422/PersonalPage")}>
+							<li id="projectListItemNoBorder" onClick={()=>this.goToProject("https://github.com/sfreeman422/PersonalPage")}>
 								<h2>PersonalPage</h2>
 								<p>A React Based Portfolio Page</p>
 							</li>

@@ -15,7 +15,9 @@
 	ul{
 		list-style: none
 	}
-
+	li{
+		cursor: pointer;
+	}
 	/*Classes*/
 	.fullPage{
 		height: 100vh;
@@ -56,6 +58,12 @@
 		width:100%;
 	}
 	#projectList{
+		background-color: #158468;
+		border-bottom-style: solid;
+		border-bottom-color: #4BAC94;
+		border-bottom-width: 1px;
+	}
+	#projectListItem{
 		background-color: #158468;
 		border-bottom-style: solid;
 		border-bottom-color: #4BAC94;
