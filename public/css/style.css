@@ -12,6 +12,9 @@
 		cursor: pointer;
 		margin: 1%;
 	}
+	ul{
+		list-style: none
+	}
 
 	/*Classes*/
 	.fullPage{
@@ -51,6 +54,15 @@
 	#projectTable{
 		table-layout: fixed;
 		width:100%;
+	}
+	#projectList{
+		background-color: #158468;
+		border-bottom-style: solid;
+		border-bottom-color: #4BAC94;
+		border-bottom-width: 1px;
+	}
+	#projectListBorder{
+		background-color: #158468;
 	}
 	#project1{
 		background-color: #158468;
@@ -143,5 +155,8 @@
 	/*IDs*/
 	#profPic{
 		display: none;
+	}
+	#aboutText{
+		font-size: 24px;
 	}
 }

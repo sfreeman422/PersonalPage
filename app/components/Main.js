@@ -7,13 +7,14 @@ import Contact from './Children/Contact';
 export default class Main extends React.Component{
 	constructor(){
 		super();
+		this.state = {viewportWidth: window.innerWidth}
 	}
 	render(){
 		return(
 		<div className="mainContent text-center">
 			<Landing />
 			<Information />
-			<Projects />
+			<Projects width={this.state.viewportWidth} />
 			<Contact />
 		</div>
 			) 

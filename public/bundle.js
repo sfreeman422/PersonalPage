@@ -21834,7 +21834,10 @@
 		function Main() {
 			_classCallCheck(this, Main);
 
-			return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this));
+			var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this));
+
+			_this.state = { viewportWidth: window.innerWidth };
+			return _this;
 		}
 
 		_createClass(Main, [{
@@ -21845,7 +21848,7 @@
 					{ className: 'mainContent text-center' },
 					_react2.default.createElement(_Landing2.default, null),
 					_react2.default.createElement(_Information2.default, null),
-					_react2.default.createElement(_Projects2.default, null),
+					_react2.default.createElement(_Projects2.default, { width: this.state.viewportWidth }),
 					_react2.default.createElement(_Contact2.default, null)
 				);
 			}
@@ -22016,10 +22019,10 @@
 	var Projects = function (_React$Component) {
 		_inherits(Projects, _React$Component);
 
-		function Projects() {
+		function Projects(props) {
 			_classCallCheck(this, Projects);
 
-			var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
+			var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this, props));
 
 			_this.goToProject.bind(_this);
 			return _this;
@@ -22036,141 +22039,247 @@
 			value: function render() {
 				var _this2 = this;
 
-				return _react2.default.createElement(
-					"div",
-					{ className: "row" },
-					_react2.default.createElement(
+				if (this.props.width < 800) {
+					return _react2.default.createElement(
 						"div",
-						{ className: "fullPage verticalCenterLanding", id: "projects" },
+						{ className: "row" },
 						_react2.default.createElement(
-							"h1",
-							{ id: "projectHeadliner" },
-							"Projects"
-						),
-						_react2.default.createElement(
-							"table",
-							{ className: "col-xs-12", id: "projectTable" },
+							"div",
+							{ className: "fullPage verticalCenterLanding", id: "projects" },
 							_react2.default.createElement(
-								"tbody",
-								null,
+								"h1",
+								{ id: "projectHeadliner" },
+								"Projects"
+							),
+							_react2.default.createElement(
+								"ul",
+								{ className: "col-xs-12", id: "projectList" },
 								_react2.default.createElement(
-									"tr",
-									null,
+									"li",
+									{ id: "projectList", onClick: function onClick() {
+											return _this2.goToProject("https://github.com/sfreeman422/HackathonQR");
+										} },
 									_react2.default.createElement(
-										"td",
-										{ className: "project", id: "project1", onClick: function onClick() {
-												return _this2.goToProject("https://github.com/sfreeman422/HackathonQR");
-											} },
-										_react2.default.createElement(
-											"h2",
-											null,
-											"HackOrg"
-										),
-										_react2.default.createElement(
-											"p",
-											null,
-											"Streamlining hackathon attendance, one QR code at a time."
-										),
-										_react2.default.createElement(
-											"p",
-											null,
-											"Awarded a Finalist Medal at #HackNJIT"
-										)
+										"h2",
+										null,
+										"HackOrg"
 									),
 									_react2.default.createElement(
-										"td",
-										{ className: "project", id: "project2", onClick: function onClick() {
-												return _this2.goToProject("https://github.com/sfreeman422/RaspAlarm");
-											} },
-										_react2.default.createElement(
-											"h2",
-											null,
-											"RaspAlarm"
-										),
-										_react2.default.createElement(
-											"p",
-											null,
-											"Deteching the bedroom with MERN & Raspberry Pi"
-										)
-									),
-									_react2.default.createElement(
-										"td",
-										{ className: "project", id: "project3", onClick: function onClick() {
-												return _this2.goToProject("https://github.com/sfreeman422/BubbleGame");
-											} },
-										_react2.default.createElement(
-											"h2",
-											null,
-											"RIP/RAV"
-										),
-										_react2.default.createElement(
-											"p",
-											null,
-											"A bubble popping game using Phaser.io"
-										)
+										"p",
+										null,
+										"Streamlining hackathon attendance, one QR code at a time."
 									)
 								),
 								_react2.default.createElement(
-									"tr",
+									"li",
+									{ id: "projectList", onClick: function onClick() {
+											return _this2.goToProject("https://github.com/sfreeman422/RaspAlarm");
+										} },
+									_react2.default.createElement(
+										"h2",
+										null,
+										"RaspAlarm"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										"De-teching the bedroom with MERN & Raspberry Pi"
+									)
+								),
+								_react2.default.createElement(
+									"li",
+									{ id: "projectList", onClick: function onClick() {
+											return _this2.goToProject("https://github.com/sfreeman422/BubbleGame");
+										} },
+									_react2.default.createElement(
+										"h2",
+										null,
+										"RIP/RAV"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										"A bubble popping game using Phaser.io"
+									)
+								),
+								_react2.default.createElement(
+									"li",
+									{ id: "projectList", onClick: function onClick() {
+											return _this2.goToProject("https://github.com/tomtom28/crap-yap");
+										} },
+									_react2.default.createElement(
+										"h2",
+										null,
+										"Crapper-Yapper"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										"A Morse Code Based, Poop Emoji Chat App."
+									)
+								),
+								_react2.default.createElement(
+									"li",
+									{ id: "projectList", onClick: function onClick() {
+											return _this2.goToProject("https://github.com/sfreeman422/NYTReact");
+										} },
+									_react2.default.createElement(
+										"h2",
+										null,
+										"NYTReact"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										"A React Based Application Using the NYT API"
+									)
+								),
+								_react2.default.createElement(
+									"li",
+									{ id: "projectListNoBorder", onClick: function onClick() {
+											return _this2.goToProject("https://github.com/sfreeman422/PersonalPage");
+										} },
+									_react2.default.createElement(
+										"h2",
+										null,
+										"PersonalPage"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										"My React Based Portfolio Page"
+									)
+								)
+							)
+						)
+					);
+				} else {
+					return _react2.default.createElement(
+						"div",
+						{ className: "row" },
+						_react2.default.createElement(
+							"div",
+							{ className: "fullPage verticalCenterLanding", id: "projects" },
+							_react2.default.createElement(
+								"h1",
+								{ id: "projectHeadliner" },
+								"Projects"
+							),
+							_react2.default.createElement(
+								"table",
+								{ className: "col-xs-12", id: "projectTable" },
+								_react2.default.createElement(
+									"tbody",
 									null,
 									_react2.default.createElement(
-										"td",
-										{ className: "project", id: "project4", onClick: function onClick() {
-												return _this2.goToProject("https://github.com/tomtom28/crap-yap");
-											} },
+										"tr",
+										null,
 										_react2.default.createElement(
-											"h2",
-											null,
-											"Crapper-Yapper"
+											"td",
+											{ className: "project", id: "project1", onClick: function onClick() {
+													return _this2.goToProject("https://github.com/sfreeman422/HackathonQR");
+												} },
+											_react2.default.createElement(
+												"h2",
+												null,
+												"HackOrg"
+											),
+											_react2.default.createElement(
+												"p",
+												null,
+												"Streamlining hackathon attendance, one QR code at a time."
+											)
 										),
 										_react2.default.createElement(
-											"p",
-											null,
-											"A Morse Code Based, Poop Emoji Chat App."
+											"td",
+											{ className: "project", id: "project2", onClick: function onClick() {
+													return _this2.goToProject("https://github.com/sfreeman422/RaspAlarm");
+												} },
+											_react2.default.createElement(
+												"h2",
+												null,
+												"RaspAlarm"
+											),
+											_react2.default.createElement(
+												"p",
+												null,
+												"De-teching the bedroom with MERN & Raspberry Pi"
+											)
 										),
 										_react2.default.createElement(
-											"p",
-											null,
-											"Built for #StupidHackathon"
+											"td",
+											{ className: "project", id: "project3", onClick: function onClick() {
+													return _this2.goToProject("https://github.com/sfreeman422/BubbleGame");
+												} },
+											_react2.default.createElement(
+												"h2",
+												null,
+												"RIP/RAV"
+											),
+											_react2.default.createElement(
+												"p",
+												null,
+												"A bubble popping game using Phaser.io"
+											)
 										)
 									),
 									_react2.default.createElement(
-										"td",
-										{ className: "project", id: "project5", onClick: function onClick() {
-												return _this2.goToProject("project5Link");
-											} },
+										"tr",
+										null,
 										_react2.default.createElement(
-											"h2",
-											null,
-											"Project 5"
+											"td",
+											{ className: "project", id: "project4", onClick: function onClick() {
+													return _this2.goToProject("https://github.com/tomtom28/crap-yap");
+												} },
+											_react2.default.createElement(
+												"h2",
+												null,
+												"Crapper-Yapper"
+											),
+											_react2.default.createElement(
+												"p",
+												null,
+												"A Morse Code Based, Poop Emoji Chat App."
+											)
 										),
 										_react2.default.createElement(
-											"p",
-											null,
-											"Description for Project 5 Goes Here"
-										)
-									),
-									_react2.default.createElement(
-										"td",
-										{ className: "project", id: "project6", onClick: function onClick() {
-												return _this2.goToProject("project6Link");
-											} },
-										_react2.default.createElement(
-											"h2",
-											null,
-											"Project 6"
+											"td",
+											{ className: "project", id: "project5", onClick: function onClick() {
+													return _this2.goToProject("https://github.com/sfreeman422/NYTReact");
+												} },
+											_react2.default.createElement(
+												"h2",
+												null,
+												"NYTReact"
+											),
+											_react2.default.createElement(
+												"p",
+												null,
+												"A React Based Application Using the NYT API"
+											)
 										),
 										_react2.default.createElement(
-											"p",
-											null,
-											"Description for Project 6 Goes Here"
+											"td",
+											{ className: "project", id: "project6", onClick: function onClick() {
+													return _this2.goToProject("https://github.com/sfreeman422/PersonalPage");
+												} },
+											_react2.default.createElement(
+												"h2",
+												null,
+												"PersonalPage"
+											),
+											_react2.default.createElement(
+												"p",
+												null,
+												"My React Based Portfolio Page"
+											)
 										)
 									)
 								)
 							)
 						)
-					)
-				);
+					);
+				}
 			}
 		}]);
 
