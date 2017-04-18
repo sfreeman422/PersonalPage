@@ -166,7 +166,7 @@
 	}
 }
 
-@media screen and (max-height: 734px){
+@media screen and (max-height: 730px){
 	h1{
 		font-size: 40px; 
 	}
@@ -175,5 +175,12 @@
 	}
 	p{
 		font-size: 16px;
+	}
+	.col-xs-4{
+		padding: 0;
+	}
+	#contactPic{
+		height: 50%;
+		width: 50%;
 	}
 }

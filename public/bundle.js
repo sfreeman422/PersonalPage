@@ -22321,7 +22321,7 @@
 								_react2.default.createElement(
 									"a",
 									{ href: "https://github.com/sfreeman422" },
-									_react2.default.createElement("img", { src: "images/octocat.png" })
+									_react2.default.createElement("img", { src: "images/octocat.png", id: "contactPic" })
 								)
 							),
 							_react2.default.createElement(
@@ -22330,7 +22330,7 @@
 								_react2.default.createElement(
 									"a",
 									{ href: "https://www.linkedin.com/in/sfreeman422" },
-									_react2.default.createElement("img", { src: "images/linkedin.png" })
+									_react2.default.createElement("img", { src: "images/linkedin.png", id: "contactPic" })
 								)
 							),
 							_react2.default.createElement(
@@ -22339,7 +22339,7 @@
 								_react2.default.createElement(
 									"a",
 									{ href: "mailto:sfreeman422@gmail.com" },
-									_react2.default.createElement("img", { src: "images/gmail.png" })
+									_react2.default.createElement("img", { src: "images/gmail.png", id: "contactPic" })
 								)
 							)
 						)
