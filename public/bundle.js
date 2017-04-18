@@ -21837,10 +21837,27 @@
 			var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this));
 
 			_this.state = { viewportWidth: window.innerWidth };
+			_this.updateWindowDimensions = _this.updateWindowDimensions.bind(_this);
 			return _this;
 		}
 
 		_createClass(Main, [{
+			key: 'componentDidMount',
+			value: function componentDidMount() {
+				this.updateWindowDimensions();
+				window.addEventListener('resize', this.updateWindowDimensions.bind(this));
+			}
+		}, {
+			key: 'componentWillUnmount',
+			value: function componentWillUnmount() {
+				window.removeEventListener('resize', this.updateWindowDimensions.bind(this));
+			}
+		}, {
+			key: 'updateWindowDimensions',
+			value: function updateWindowDimensions() {
+				this.setState({ viewportWidth: window.innerWidth });
+			}
+		}, {
 			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(

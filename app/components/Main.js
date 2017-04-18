@@ -8,6 +8,17 @@ export default class Main extends React.Component{
 	constructor(){
 		super();
 		this.state = {viewportWidth: window.innerWidth}
+		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+	}
+	componentDidMount(){
+		this.updateWindowDimensions();
+		window.addEventListener('resize', this.updateWindowDimensions.bind(this));
+	}
+	componentWillUnmount(){
+		window.removeEventListener('resize', this.updateWindowDimensions.bind(this));
+	}
+	updateWindowDimensions(){
+		this.setState({viewportWidth: window.innerWidth});
 	}
 	render(){
 		return(
